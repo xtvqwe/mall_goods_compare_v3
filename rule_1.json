@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "condition": {
+        "regexFilter": "https://fts.jd.com/*",
+        "resourceTypes": [
+          "xmlhttprequest"
+        ]
+      }, 
+      "action": { 
+        "type": "modifyHeaders",
+        "requestHeaders": [
+          {
+            "header": "Referer",
+            "operation": "set",
+            "value": "https://www.jd.com/"
+          }
+        ]
+      }
+    }
+  ]
